@@ -136,5 +136,20 @@ top: 25%;
 text-align: center;
 text-transform: capitalize;
 font-size: 60px;
-
+ }
+ .events-table{
+   text-align: center;
+   position: relative;
+   top: 30%;
+   border-style: solid;
+   font-family: fantasy;
+   font-size: 35px;
+ }
+ .events-table td{
+   padding:40px 80px 40px 80px;
+ }
+ 
+ td.heading{
+   font-style: normal;
+   font-weight: normal;
  }
