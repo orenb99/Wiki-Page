@@ -163,3 +163,7 @@ font-size: 80px;
  }
 
  /* Gallery Page styling */
+.gallery-img{
+  padding-top: 100px;
+  width: var(--picw);
+}
