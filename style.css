@@ -87,3 +87,25 @@ body{
   }
 
   /* Submission Page styling */
+  #sub-sec{
+    height: 100vh;
+    text-align: center;
+  }
+  #subh{
+    font-size: 60px;
+  }
+  #submission{
+    position: relative;
+    top: 25%;
+  }
+  .sub-input{
+    text-align: center;
+    margin:20px;
+    width: 350px;
+    height: 30px;
+    border-style: solid;
+    border-color: var(--color);
+    background-color: rgb(75, 0, 0);
+    color: white;
+    border-width: 5px;
+  }
