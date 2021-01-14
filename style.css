@@ -1,6 +1,11 @@
+:root {
+  --color: red;
+  --bg: black;
+}
+
 body{
-    background-color: black;
-    color: red;
+    background-color: var(--bg);
+    color: var(--color);
     
 }
 /* Navigation bar styling */
@@ -19,9 +24,9 @@ body{
    left: -10px;
    width:100%;
    border:solid;
-   border-color: red;
+   border-color: var(--color);
    border-width: 10px;
-   background-color: black;
+   background-color: var(--bg);
 
   }
   #title{
@@ -40,7 +45,7 @@ body{
     bottom: 40px;
     text-decoration: none;
     font-size: 60px;
-    color: red;
+    color: var(--color);
   }
 
 /* Main Page styling */
