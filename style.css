@@ -1,12 +1,33 @@
 #header{
     z-index: 2;;
-   text-align:center;
+    text-align:center;
    position: fixed; 
-   top: 0px;
-    width:100%;
-   background-color:aqua; 
+   top: 0;
+   left: -10px;
+   width:100%;
+   background-color:black; 
    border:solid;
-   font-family:"Comic Sans MS", "Comic Sans", cursive;
+   border-color: red;
+   border-width: 10px;
    font-weight:bold;
-   font-size: 20px; 
+   font-size: 20px;
+  }
+  #title{
+      position: relative;
+      width: 600px;
+      height: 100px;
+      padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  #navbar{
+    display: inline;
+  }
+  #navbar a{
+    position: relative;
+    font-family: fantasy;
+    text-decoration: none;
+    font-style: italic;
+    letter-spacing: 4px;
+    color: red;
+    font-size: 60px;
   }
