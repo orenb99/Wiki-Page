@@ -8,17 +8,24 @@
 
     <!--Gallery Array Script-->
     <script>
-    let arr= [];
+    let imgArr= [], textArr = [];
     let counter=0;
-    arr[0]="https://cdn-5a0e39aaf911ca1e30bcc563.closte.com/wp-content/uploads/2021/01/200119010627-bpt112-mcgregor-cerrone-ufc-01192020.jpg";
-    arr[1]="https://pbs.twimg.com/media/Ei51vXvVoAArAZG.jpg";
+    imgArr[0]="https://cdn-5a0e39aaf911ca1e30bcc563.closte.com/wp-content/uploads/2021/01/200119010627-bpt112-mcgregor-cerrone-ufc-01192020.jpg";
+    imgArr[1]="https://pbs.twimg.com/media/Ei51vXvVoAArAZG.jpg";
+    imgArr[2]="https://pbs.twimg.com/media/Ei51vXvVoAArAZG.jpg";
+    imgArr[3]="https://pbs.twimg.com/media/Ei51vXvVoAArAZG.jpg";
+    imgArr[4]="https://pbs.twimg.com/media/Ei51vXvVoAArAZG.jpg";
+    imgArr[5]="https://pbs.twimg.com/media/Ei51vXvVoAArAZG.jpg";
+    imgArr[6]="https://pbs.twimg.com/media/Ei51vXvVoAArAZG.jpg";
+    imgArr[7]="https://pbs.twimg.com/media/Ei51vXvVoAArAZG.jpg";
+    imgArr[8]="https://pbs.twimg.com/media/Ei51vXvVoAArAZG.jpg";
 
     function changeImageNext(){
-        if(counter<arr.length-1)
+        if(counter<imgArr.length-1)
             counter++;
         else
             counter=0;
-    document.getElementById("changing-img").src=arr[counter];
+    document.getElementById("changing-img").src=imgArr[counter];
     }
     </script>
 
@@ -38,8 +45,10 @@
             <h1 id="events-title" class="heading">
                 Gallery
             </h1>
-            <button name="yes" onclick="changeImageNext()">click me</button>
-            <img id="changing-img"class="gallery-img" src="https://cdn-5a0e39aaf911ca1e30bcc563.closte.com/wp-content/uploads/2021/01/200119010627-bpt112-mcgregor-cerrone-ufc-01192020.jpg"  name="1">
+            <button class="change-buttons" id="previous" onclick="changeImageNext()"><</button>
+            <button class="change-buttons" id="next" onclick="changeImageNext()">></button>
+            <img id="changing-img"class="gallery-img" src="https://cdn-5a0e39aaf911ca1e30bcc563.closte.com/wp-content/uploads/2021/01/200119010627-bpt112-mcgregor-cerrone-ufc-01192020.jpg">
+            <figcaption id="changing text" class="heading">a</figcaption>
         </section>
     </main>
 </body>
