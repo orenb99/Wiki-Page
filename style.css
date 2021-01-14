@@ -190,7 +190,6 @@ font-size: 80px;
   text-align: center;
   font-style: normal;
 }
-#videos-section{
-  display: flex;
+.gallery-video{
+  margin: 10px 30px 50px 30px;
 }
-
