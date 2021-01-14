@@ -20,11 +20,22 @@
     imgArr[7]="https://pbs.twimg.com/media/Ei51vXvVoAArAZG.jpg";
     imgArr[8]="https://pbs.twimg.com/media/Ei51vXvVoAArAZG.jpg";
 
+    textArr[0]="Conor McGregor after his fight with Donald Cerrone";
+    textArr[1]="Israel Adesanya vs Paulo Costa";
+    textArr[2]="Israel Adesanya vs Paulo Costa";
+    textArr[3]="Israel Adesanya vs Paulo Costa";
+    textArr[4]="Israel Adesanya vs Paulo Costa";
+    textArr[5]="Israel Adesanya vs Paulo Costa";
+    textArr[6]="Israel Adesanya vs Paulo Costa";
+    textArr[7]="Israel Adesanya vs Paulo Costa";
+    textArr[8]="Israel Adesanya vs Paulo Costa";
+
     function changeImageNext(){
         if(counter<imgArr.length-1)
             counter++;
         else
             counter=0;
+    document.getElementById("changing-text").innerHTML=textArr[counter];
     document.getElementById("changing-img").src=imgArr[counter];
     }
     </script>
@@ -48,7 +59,7 @@
             <button class="change-buttons" id="previous" onclick="changeImageNext()"><</button>
             <button class="change-buttons" id="next" onclick="changeImageNext()">></button>
             <img id="changing-img"class="gallery-img" src="https://cdn-5a0e39aaf911ca1e30bcc563.closte.com/wp-content/uploads/2021/01/200119010627-bpt112-mcgregor-cerrone-ufc-01192020.jpg">
-            <figcaption id="changing text" class="heading">a</figcaption>
+            <figcaption id="changing-text" class="heading">Conor McGregor after his fight with Donald Cerrone</figcaption>
         </section>
     </main>
 </body>

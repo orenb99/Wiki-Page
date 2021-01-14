@@ -183,3 +183,9 @@ font-size: 80px;
 #next{
   left: 63%;
 }
+#changing-text{
+  font-size: 40px;
+  position: relative;
+  top: 20%;
+  text-align: center;
+}
