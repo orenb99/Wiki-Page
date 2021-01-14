@@ -1,6 +1,7 @@
 :root {
   --color: red;
   --bg: black;
+  --picw: 400px;
 }
 
 body{
@@ -146,10 +147,18 @@ font-size: 60px;
    font-size: 35px;
  }
  .events-table td{
-   padding:40px 80px 40px 80px;
+   padding:20px 40px 20px 40px;
+   border-color:var(--color);
+   
  }
- 
+  td a{
+    text-decoration: none;
+  }
  td.heading{
+   border-top-style: solid;
    font-style: normal;
    font-weight: normal;
+ }
+ .fighter{
+   width: var(--picw);
  }
