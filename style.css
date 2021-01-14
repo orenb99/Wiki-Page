@@ -1,6 +1,7 @@
 body{
     background-color: black;
     color: red;
+    
 }
 .heading{
   letter-spacing: 4px;
@@ -39,11 +40,12 @@ body{
     font-size: 60px;
     color: red;
   }
-
-  #welcome-section{
-    position: absolute;
-    left: -10px;
+  section{
     width: 100%;
+  }
+  #welcome-section{
+    position: static;
+    left: -10px;
     height:100vh;
   }
   .welcome{
@@ -51,5 +53,20 @@ body{
     text-align:center;
     position:relative;
     font-size: 80px;
+  }
+  .contact{
+    position: relative;
+    top: 100px;
+  }
+  u.contact{
+    font-style: normal;
+    font-size: 60px;
+    left: 40%;
+    
+  }
+  em.contact{
+    font-size: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
   }
   
