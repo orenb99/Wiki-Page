@@ -98,7 +98,7 @@ body{
     position: relative;
     top: 25%;
   }
-  form > input {
+  form > input[type="text"],form > input[type="email"],form > input[type="date"] {
     text-align: center;
     margin:20px 0 40px 0;
     width: 350px;
