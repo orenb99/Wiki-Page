@@ -5,6 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="./style.css">
+
+    <!--Gallery Array Script-->
+    <script>
+    let imgArr= [], textArr = [];
+    let counter=0;
+    imgArr[0]="https://cdn-5a0e39aaf911ca1e30bcc563.closte.com/wp-content/uploads/2021/01/200119010627-bpt112-mcgregor-cerrone-ufc-01192020.jpg";
+    imgArr[1]="https://pbs.twimg.com/media/Ei51vXvVoAArAZG.jpg";
+    imgArr[2]="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2020%2F0510%2Fr697268_1296x729_16%2D9.jpg";
+    imgArr[3]="https://dmxg5wxfqgb4u.cloudfront.net/styles/background_image_xl/s3/2020-01/UFCKOs2019Hero.jpg?epwfSYYRfCPjtNOL0Lj3qkrRFaksThc5&itok=2GTrokUF";
+    imgArr[4]="https://i.ytimg.com/vi/ddqx2TobFTM/maxresdefault.jpg";
+    imgArr[5]="https://i.ytimg.com/vi/HMrjxhaq8Tg/maxresdefault.jpg";
+    imgArr[6]="https://ca-times.brightspotcdn.com/dims4/default/fa5d876/2147483647/strip/true/crop/2048x1292+0+0/resize/840x530!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ffc%2Fe3%2F2f98ec438df0144147ee1208b9ee%2Fla-ufc193-wre0032330295-20151115";
+
+    textArr[0]="Conor McGregor after his fight with Donald Cerrone";
+    textArr[1]="Israel Adesanya vs Paulo Costa";
+    textArr[2]="Justin Gaethje vs Tony Ferguson";
+    textArr[3]="Jorge Masvidal breaks a record for the fastest ko against Ben Askren with just 5 secs";
+    textArr[4]="Edson Barboza Jr KO's Terry Etim with a wheelkick to the head";
+    textArr[5]="Khabib Nurmagomedov Sets UFC Takedown Record for a Single Fight Against Abel Trujillo";
+    textArr[6]="Holly Holm KO's Ronda Rousey with a head kick";
+
+    function changeImageNext(){
+        if(counter<imgArr.length-1)
+            counter++;
+        else
+            counter=0;
+        document.getElementById("changing-text").innerHTML=textArr[counter];
+        document.getElementById("changing-img").src=imgArr[counter];
+    }
+    function changeImagePre(){
+        if(counter==0)
+            counter=imgArr.length-1;
+       else
+            counter--;
+        document.getElementById("changing-text").innerHTML=textArr[counter];
+        document.getElementById("changing-img").src=imgArr[counter];
+    }
+    </script>
+
 </head>
 <body>
     <header id="header">
@@ -21,14 +60,24 @@
             <h1 id="events-title" class="heading">
                 Gallery
             </h1>
-            <img class="gallery-img" src="https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/2614933.png&w=350&h=254" name="1">
-            <img class="gallery-img" src="https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/3164030.png" name="2">
-            <img class="gallery-img" src="#" name="3">
-            <img class="gallery-img" src="#" name="4">
-            <img class="gallery-img" src="#" name="5">
-            <img class="gallery-img" src="#" name="6">
-            <img class="gallery-img" src="#" name="7">
+            <button class="change-buttons" id="previous" onclick="changeImagePre()"><</button>
+            <button class="change-buttons" id="next" onclick="changeImageNext()">></button>
+            <img id="changing-img"class="gallery-img" src="https://cdn-5a0e39aaf911ca1e30bcc563.closte.com/wp-content/uploads/2021/01/200119010627-bpt112-mcgregor-cerrone-ufc-01192020.jpg">
+            <figcaption id="changing-text" class="heading">Conor McGregor after his fight with Donald Cerrone</figcaption>
         </section>
     </main>
+    <footer id="footer">
+        <section id="videos-section">
+            <h1 class="heading" id="events-title">Videos</h1>
+            <iframe width="560" height="315" class="gallery-video" src="https://www.youtube.com/embed/1QBP7gAZIOI" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" class="gallery-video" src="https://www.youtube.com/embed/RhgOtbbU1UM" frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+             <iframe width="560" height="315" class="gallery-video" src="https://www.youtube.com/embed/I6IAz0GOCh4" frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </footer>
 </body>
 </html>

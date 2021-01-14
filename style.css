@@ -2,6 +2,7 @@
   --color: red;
   --bg: black;
   --picw: 500px;
+  --button-size:50px;
 }
 
 body{
@@ -164,6 +165,31 @@ font-size: 80px;
 
  /* Gallery Page styling */
 .gallery-img{
-  padding-top: 100px;
-  width: var(--picw);
+  position: relative;
+  top: 15%;
+  left:30%;
+  width: 600px;
+  display: inline;
+}
+.change-buttons{
+  z-index: 1;
+  width: var(--button-size);
+  height: var(--button-size);
+  font-size: 35px;
+  text-align: center;
+  position: relative;
+  left: 34.5%;
+}
+#next{
+  left: 63%;
+}
+#changing-text{
+  font-size: 40px;
+  position: relative;
+  top: 20%;
+  text-align: center;
+  font-style: normal;
+}
+.gallery-video{
+  margin: 10px 30px 50px 30px;
 }
