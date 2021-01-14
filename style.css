@@ -1,16 +1,28 @@
+body{
+    background-color: black;
+    color: red;
+}
+.heading{
+  letter-spacing: 4px;
+  font-weight:bold;
+  font-family: fantasy;
+  font-style: italic;
+}
+
 #header{
-    z-index: 2;;
+   z-index: 2;
    position: fixed; 
    top: 0;
    left: -10px;
    width:100%;
-   background-color:black; 
    border:solid;
    border-color: red;
    border-width: 10px;
-   font-weight:bold;
+   background-color: black;
+
   }
   #title{
+      
       position: relative;
       width: 600px;
       height: 100px;
@@ -23,10 +35,17 @@
     padding-right: 100px;
     position: relative;
     bottom: 40px;
-    font-family: fantasy;
     text-decoration: none;
-    font-style: italic;
-    letter-spacing: 4px;
-    color: red;
     font-size: 60px;
+    color: red;
+  }
+  #welcome-section{
+    position:static;
+    height:100vh;
+  }
+  .welcome{
+    text-align:center;
+    position:relative;
+    top:30%;
+    font-size: 80px;
   }
