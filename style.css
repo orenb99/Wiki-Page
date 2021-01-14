@@ -56,12 +56,17 @@ body{
     height:100vh;
   }
   .welcome{
-    top: 30%;
+    top: 35%;
     text-align:center;
     position:relative;
     font-size: 80px;
   }
-
+  #war{
+    position: absolute;
+    float: left;
+    left: 20px;
+    top: 20%;
+  }
   h1.about{
     font-size: 60px;
     font-style: normal;
