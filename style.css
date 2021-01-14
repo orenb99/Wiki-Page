@@ -1,7 +1,7 @@
 :root {
   --color: red;
   --bg: black;
-  --picw: 400px;
+  --picw: 500px;
 }
 
 body{
@@ -136,26 +136,25 @@ position: relative;
 top: 25%;
 text-align: center;
 text-transform: capitalize;
-font-size: 60px;
+font-size: 80px;
  }
  .events-table{
+   left:10%;
    text-align: center;
    position: relative;
    top: 30%;
-   border-style: solid;
    font-family: fantasy;
-   font-size: 35px;
+   font-size: 60px;
  }
  .events-table td{
-   padding:20px 40px 20px 40px;
-   border-color:var(--color);
-   
+   padding-bottom: 120px;
  }
   td a{
     text-decoration: none;
+    font-size: 60px;
   }
  td.heading{
-   border-top-style: solid;
+   padding-bottom: 0px;
    font-style: normal;
    font-weight: normal;
  }
