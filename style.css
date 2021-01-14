@@ -10,6 +10,17 @@ body{
     color: var(--color);
     
 }
+@keyframes ani1{
+  0%{
+    opacity: 0;
+    left: -50px;
+  }
+  100%{
+    opacity: 100%;
+    left:0px;
+  }
+}
+
 /* Navigation bar styling */
 
 .heading{
@@ -62,6 +73,24 @@ body{
     text-align:center;
     position:relative;
     font-size: 80px;
+  }
+  .animated1{
+    opacity: 0;
+    animation-name: ani1;
+    animation-duration: 3s;
+    animation-delay:3.5s;
+    animation-fill-mode: forwards;
+  }
+  #Heading1{
+    font-size: 100px;
+    animation-name: ani1;
+    animation-delay:1s;
+    animation-duration: 3s;
+  }
+  #Heading2{
+    animation-name: ani1;
+    animation-delay:2s;
+    animation-duration: 3s;
   }
   #war{
     position: absolute;
@@ -124,6 +153,11 @@ body{
     top: 30%;
     display: inline;
     width: 600px;
+    opacity: 0;
+    animation-name: ani1;
+    animation-duration: 2s;
+    animation-delay:0.5;
+    animation-fill-mode: forwards;
   }
   #McGregor{
     float: left;
