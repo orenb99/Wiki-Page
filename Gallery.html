@@ -31,8 +31,16 @@
             counter++;
         else
             counter=0;
-    document.getElementById("changing-text").innerHTML=textArr[counter];
-    document.getElementById("changing-img").src=imgArr[counter];
+        document.getElementById("changing-text").innerHTML=textArr[counter];
+        document.getElementById("changing-img").src=imgArr[counter];
+    }
+    function changeImagePre(){
+        if(counter==0)
+            counter=imgArr.length-1;
+       else
+            counter--;
+        document.getElementById("changing-text").innerHTML=textArr[counter];
+        document.getElementById("changing-img").src=imgArr[counter];
     }
     </script>
 
@@ -52,7 +60,7 @@
             <h1 id="events-title" class="heading">
                 Gallery
             </h1>
-            <button class="change-buttons" id="previous" onclick="changeImageNext()"><</button>
+            <button class="change-buttons" id="previous" onclick="changeImagePre()"><</button>
             <button class="change-buttons" id="next" onclick="changeImageNext()">></button>
             <img id="changing-img"class="gallery-img" src="https://cdn-5a0e39aaf911ca1e30bcc563.closte.com/wp-content/uploads/2021/01/200119010627-bpt112-mcgregor-cerrone-ufc-01192020.jpg">
             <figcaption id="changing-text" class="heading">Conor McGregor after his fight with Donald Cerrone</figcaption>
