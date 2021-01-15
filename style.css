@@ -58,6 +58,7 @@ body{
   font-weight:bold;
   font-family: fantasy;
   font-style: italic;
+  text-decoration: none;
 }
 
 #header{
@@ -86,13 +87,18 @@ body{
     padding-right: 100px;
     position: relative;
     bottom: 40px;
-    text-decoration: none;
     font-size: 60px;
     color: var(--color);
   }
   #navbar a:hover{
-    font-size: 70px;
+    font-size: 65px;
     color:white;
+  }
+  a.current {
+    text-decoration: underline;
+  }
+  img.current{
+    background-color: rgb(10, 10, 10);
   }
 
 /* Main Page styling */
@@ -220,10 +226,6 @@ body{
   animation-duration: 2s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
-
- }
- .animated2{
-  animation-delay: ;
 
  }
  .events-table{
