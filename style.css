@@ -209,7 +209,7 @@ body{
 
  }
  .animated2{
-  animation-delay: 0.5s;
+  animation-delay: ;
 
  }
  .events-table{
@@ -219,6 +219,11 @@ body{
    top: 30%;
    font-family: fantasy;
    font-size: 60px;
+   opacity: 0;
+  animation-name: ani2;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
  }
  .events-table td{
    padding-bottom: 120px;
