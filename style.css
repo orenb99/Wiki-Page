@@ -10,6 +10,47 @@ body{
     color: var(--color);
     
 }
+@keyframes ani1{
+  0%{
+    opacity: 0;
+    left: -50px;
+  }
+  100%{
+    opacity: 100%;
+    left:0px;
+  }
+}
+@keyframes ani2{
+  0%{
+    opacity: 0;
+    top: 35%;
+  }
+  100%{
+    opacity: 100%;
+    top:30%;
+  }
+}
+@keyframes ani3{
+  0%{
+    opacity: 0;
+    top:-50px;
+  }
+  100%{
+    opacity: 100%;
+    top:0;
+  }
+}
+@keyframes ani4{
+  0%{
+    opacity: 0;
+    top:10%;
+  }
+  100%{
+    opacity: 100%;
+    top:15%;
+  }
+}
+
 /* Navigation bar styling */
 
 .heading{
@@ -49,6 +90,10 @@ body{
     font-size: 60px;
     color: var(--color);
   }
+  #navbar a:hover{
+    font-size: 70px;
+    color:white;
+  }
 
 /* Main Page styling */
   section{
@@ -62,6 +107,24 @@ body{
     text-align:center;
     position:relative;
     font-size: 80px;
+  }
+  .animated1{
+    opacity: 0;
+    animation-name: ani1;
+    animation-duration: 3s;
+    animation-delay:3.5s;
+    animation-fill-mode: forwards;
+  }
+  #Heading1{
+    font-size: 100px;
+    animation-name: ani1;
+    animation-delay:1s;
+    animation-duration: 3s;
+  }
+  #Heading2{
+    animation-name: ani1;
+    animation-delay:2s;
+    animation-duration: 3s;
   }
   #war{
     position: absolute;
@@ -100,10 +163,20 @@ body{
   }
   #subh{
     font-size: 60px;
+    opacity: 0;
+    animation-name: ani1;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
   }
   #submission{
     position: relative;
     top: 25%;
+    opacity: 0;
+    animation-name: ani2;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
   }
   form > input[type="text"],form > input[type="email"],form > input[type="date"] {
     text-align: center;
@@ -124,6 +197,11 @@ body{
     top: 30%;
     display: inline;
     width: 600px;
+    opacity: 0;
+    animation-name: ani2;
+    animation-duration: 2s;
+    animation-delay:0.5;
+    animation-fill-mode: forwards;
   }
   #McGregor{
     float: left;
@@ -133,11 +211,20 @@ body{
   }
  /* Event Page styling */
  #events-title{
-position: relative;
-top: 20%;
-text-align: center;
-text-transform: capitalize;
-font-size: 80px;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 80px;
+  opacity: 0;
+  animation-name: ani4;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+
+ }
+ .animated2{
+  animation-delay: ;
+
  }
  .events-table{
    left:10%;
@@ -146,6 +233,11 @@ font-size: 80px;
    top: 30%;
    font-family: fantasy;
    font-size: 60px;
+   opacity: 0;
+  animation-name: ani2;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
  }
  .events-table td{
    padding-bottom: 120px;
@@ -153,6 +245,10 @@ font-size: 80px;
   td a{
     text-decoration: none;
     font-size: 60px;
+  }
+  td a:hover{
+    font-size: 70px;
+    color:white;
   }
  td.heading{
    padding-bottom: 0px;
@@ -166,10 +262,15 @@ font-size: 80px;
  /* Gallery Page styling */
 .gallery-img{
   position: relative;
-  top: 15%;
   left:30%;
   width: 600px;
   display: inline;
+  opacity: 0;
+  animation-name: ani4;
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  
 }
 .change-buttons{
   z-index: 1;
@@ -179,6 +280,11 @@ font-size: 80px;
   text-align: center;
   position: relative;
   left: 34.5%;
+  opacity: 0;
+  animation-name: ani3;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 #next{
   left: 63%;
@@ -186,9 +292,13 @@ font-size: 80px;
 #changing-text{
   font-size: 40px;
   position: relative;
-  top: 20%;
   text-align: center;
   font-style: normal;
+  opacity: 0;
+  animation-name: ani4;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 .gallery-video{
   margin: 10px 30px 50px 30px;
