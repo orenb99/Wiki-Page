@@ -30,6 +30,26 @@ body{
     top:30%;
   }
 }
+@keyframes ani3{
+  0%{
+    opacity: 0;
+    top:-50px;
+  }
+  100%{
+    opacity: 100%;
+    top:0;
+  }
+}
+@keyframes ani4{
+  0%{
+    opacity: 0;
+    top:10%;
+  }
+  100%{
+    opacity: 100%;
+    top:15%;
+  }
+}
 
 /* Navigation bar styling */
 
@@ -177,11 +197,20 @@ body{
   }
  /* Event Page styling */
  #events-title{
-position: relative;
-top: 20%;
-text-align: center;
-text-transform: capitalize;
-font-size: 80px;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 80px;
+  opacity: 0;
+  animation-name: ani4;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+
+ }
+ .animated2{
+  animation-delay: 0.5s;
+
  }
  .events-table{
    left:10%;
@@ -210,10 +239,15 @@ font-size: 80px;
  /* Gallery Page styling */
 .gallery-img{
   position: relative;
-  top: 15%;
   left:30%;
   width: 600px;
   display: inline;
+  opacity: 0;
+  animation-name: ani4;
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  
 }
 .change-buttons{
   z-index: 1;
@@ -223,6 +257,11 @@ font-size: 80px;
   text-align: center;
   position: relative;
   left: 34.5%;
+  opacity: 0;
+  animation-name: ani3;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 #next{
   left: 63%;
@@ -230,9 +269,13 @@ font-size: 80px;
 #changing-text{
   font-size: 40px;
   position: relative;
-  top: 20%;
   text-align: center;
   font-style: normal;
+  opacity: 0;
+  animation-name: ani4;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 .gallery-video{
   margin: 10px 30px 50px 30px;
