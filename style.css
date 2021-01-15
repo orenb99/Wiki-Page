@@ -90,6 +90,10 @@ body{
     font-size: 60px;
     color: var(--color);
   }
+  #navbar a:hover{
+    font-size: 70px;
+    color:white;
+  }
 
 /* Main Page styling */
   section{
@@ -231,6 +235,10 @@ body{
   td a{
     text-decoration: none;
     font-size: 60px;
+  }
+  td a:hover{
+    font-size: 70px;
+    color:white;
   }
  td.heading{
    padding-bottom: 0px;
